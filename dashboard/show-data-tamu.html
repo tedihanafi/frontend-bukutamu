@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Show Tamu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-50 dark:bg-gray-900 dark:text-gray-200">
+    <div class="flex justify-center items-center min-h-screen">
+      <div
+        class="p-6 w-full max-w-6xl bg-white dark:bg-gray-800 rounded-lg shadow-lg"
+      >
+        <h1
+          class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-6 text-center"
+        >
+          Show Tamu
+        </h1>
+
+        <!-- Table Show Data Tamu -->
+        <div class="overflow-x-auto relative shadow-lg sm:rounded-lg mb-6">
+          <table
+            class="w-full text-sm text-left text-gray-500 dark:text-gray-400"
+          >
+            <thead
+              class="text-xs text-gray-700 uppercase bg-gray-200 dark:bg-gray-700 dark:text-gray-400"
+            >
+              <tr>
+                <th scope="col" class="py-3 px-6">Nama</th>
+                <th scope="col" class="py-3 px-6">Instansi</th>
+                <th scope="col" class="py-3 px-6">Keperluan</th>
+                <th scope="col" class="py-3 px-6">Bidang Tujuan</th>
+                <th scope="col" class="py-3 px-6">Tanggal</th>
+                <th scope="col" class="py-3 px-6">Waktu</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Dummy Data -->
+              <tr
+                class="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
+              >
+                <td class="py-4 px-6">Budi Santoso</td>
+                <td class="py-4 px-6">PT. Sukses Mandiri</td>
+                <td class="py-4 px-6">Rapat Kerjasama</td>
+                <td class="py-4 px-6">Bidang Pengembangan</td>
+                <td class="py-4 px-6">2024-10-25</td>
+                <td class="py-4 px-6">10:00</td>
+              </tr>
+              <tr
+                class="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
+              >
+                <td class="py-4 px-6">Siti Aminah</td>
+                <td class="py-4 px-6">Universitas XYZ</td>
+                <td class="py-4 px-6">Studi Banding</td>
+                <td class="py-4 px-6">Bidang Pendidikan</td>
+                <td class="py-4 px-6">2024-10-23</td>
+                <td class="py-4 px-6">13:00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Button Kembali -->
+        <div class="text-center">
+          <button
+            type="button"
+            class="bg-gray-400 text-white px-4 py-2 rounded-lg hover:bg-gray-500 transition-all"
+            onclick="window.location.href='./data-tamu.html';"
+          >
+            Kembali
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Perangkat Daerah</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+    />
+  </head>
+  <body class="bg-gray-100 dark:bg-gray-800">
+    <!-- Content -->
+    <div class="flex items-center justify-center h-screen p-6">
+      <div
+        class="w-full max-w-lg bg-white dark:bg-gray-700 shadow-lg rounded-lg p-8"
+      >
+        <h1
+          class="text-3xl font-extrabold text-center text-gray-800 dark:text-white mb-8"
+        >
+          Edit Perangkat Daerah
+        </h1>
+
+        <!-- Form to edit device -->
+        <form action="/update-perangkat" method="POST">
+          <input type="hidden" name="id" value="1" />
+          <!-- Ganti dengan ID perangkat yang sebenarnya -->
+          <div class="mb-6">
+            <label
+              for="nama"
+              class="block text-gray-700 dark:text-gray-200 font-semibold mb-2"
+              >Nama Perangkat Daerah</label
+            >
+            <input
+              type="text"
+              id="nama"
+              name="nama"
+              value="Nama Perangkat Daerah"
+              required
+              class="w-full p-3 border border-gray-300 rounded-lg dark:bg-gray-600 dark:border-gray-500 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300 ease-in-out hover:shadow-md"
+            />
+          </div>
+
+          <div class="flex justify-end">
+            <button
+              class="bg-red-500 text-white px-6 py-2 rounded-lg hover:bg-red-600 transition-all mr-3"
+            >
+              <a href="./perangkat-daerah.html">Batal</a>
+            </button>
+            <button
+              type="submit"
+              class="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition duration-300 ease-in-out"
+            >
+              Simpan Perubahan
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
